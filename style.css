@@ -68,7 +68,7 @@ header:hover{
 .nav-bar{
 	list-style:none;
 	position: relative;
-	display: inline-flex;
+	display: collapse;
 }
 
 a.nav-link{
