@@ -49,6 +49,7 @@ header{
 	top: 0;
 	transition: 0.3s;
 	z-index: 5;
+	
 }
 .nav-show{
 	opacity: 0;
@@ -75,7 +76,7 @@ a.nav-link{
 	margin: 2px;
 	padding: 5px 10px;
 	text-decoration: none;
-	color: var(--main-fonts-color);
+	color: #000;
 	font-family: var(--main-font-family);
 	cursor: pointer;
 	text-transform: uppercase;
