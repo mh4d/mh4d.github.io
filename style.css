@@ -49,7 +49,7 @@ header{
 	top: 0;
 	transition: 0.3s;
 	z-index: 5;
-	
+	font-color: #000;
 }
 .nav-show{
 	opacity: 0;
