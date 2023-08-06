@@ -37,7 +37,7 @@ main{
        header
 ──────────────────*/
 
-header{
+      header{
 	margin: 0 auto;
 	width: 100%;
 	height: 70px;
@@ -49,7 +49,6 @@ header{
 	top: 0;
 	transition: 0.3s;
 	z-index: 5;
-	font-color: #fff;
 }
 .nav-show{
 	opacity: 0;
@@ -76,19 +75,53 @@ a.nav-link{
 	margin: 2px;
 	padding: 5px 10px;
 	text-decoration: none;
-	color: #000;
+	color: var(--main-fonts-color);
 	font-family: var(--main-font-family);
 	cursor: pointer;
 	text-transform: uppercase;
 }
 
 .active{
-	background: var(--main-decor-color);
+	background: #00a9e2;
 }
 
 .nav-link:hover {
-	color: #000000;
+	color: #000;
     background: var(--main-decor-color);
+          }
+          .hamburger {
+	display: none;
+}
+
+.hamburger div{
+	width: 30px;
+	height: 3px;
+	background: #dbdbdb;
+	margin: 5px;
+	transition:all 0.3s ease;
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+	opacity: 0;
+}
+
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity:0;
+		transform: translatex(50px);
+	}
+	to{
+		opacity: 1;
+		transform:translatex(0px);
+	}
 }
 
 /*──────────────────
@@ -455,7 +488,7 @@ main{
        header
 ──────────────────*/
 
-header{
+      header{
 	margin: 0 auto;
 	width: 100%;
 	height: 70px;
@@ -467,7 +500,6 @@ header{
 	top: 0;
 	transition: 0.3s;
 	z-index: 5;
-	font-color: #fff;
 }
 .nav-show{
 	opacity: 0;
@@ -501,12 +533,46 @@ a.nav-link{
 }
 
 .active{
-	background: var(--main-decor-color);
+	background: #00a9e2;
 }
 
 .nav-link:hover {
-	color: #000000;
+	color: #000;
     background: var(--main-decor-color);
+          }
+          .hamburger {
+	display: none;
+}
+
+.hamburger div{
+	width: 30px;
+	height: 3px;
+	background: #dbdbdb;
+	margin: 5px;
+	transition:all 0.3s ease;
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+	opacity: 0;
+}
+
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity:0;
+		transform: translatex(50px);
+	}
+	to{
+		opacity: 1;
+		transform:translatex(0px);
+	}
 }
 
 /*──────────────────
